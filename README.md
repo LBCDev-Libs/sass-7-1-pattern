@@ -53,13 +53,13 @@ El archivo `main.scss` importa todos los archivos de estas carpetas y actúa com
 Para añadir este patrón a otros proyectos utilizaremos git subtree. En este ejemplo añadimos el repo en la carpeta src/styles
 
 ```bash
-git subtree add --prefix src/styles https://github.com/LBC-Starter-Kits/sass-7-1-pattern.git main --squash
+git subtree add --prefix src/styles https://github.com/LBCDev-Libs/sass-7-1-pattern.git main --squash
 ```
 
 #### <a name="actualizacion-libreria"></a> Actualización de librería
 
 ```bash
-git subtree pull --prefix src/styles https://github.com/LBC-Starter-Kits/sass-7-1-pattern.git main --squash
+git subtree pull --prefix src/styles https://github.com/LBCDev-Libs/sass-7-1-pattern.git main --squash
 ```
 
 Es recomendable añadir un script al archivo _package.json:_
@@ -68,7 +68,7 @@ Es recomendable añadir un script al archivo _package.json:_
 
   "scripts": {
 		...
-    "update-styles": "git subtree pull --prefix src/styles https://github.com/LBC-Starter-Kits/sass-7-1-pattern.git main --squash"
+    "update-styles": "git subtree pull --prefix src/styles https://github.com/LBCDev-Libs/sass-7-1-pattern.git main --squash"
     ...
   },
 ```
